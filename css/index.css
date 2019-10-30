@@ -1,0 +1,57 @@
+/* 清除浮动 */
+    .clearfix::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+    /* 左浮动 */
+    .pull-left{
+        float: left;
+    }
+    /* 有浮动 */
+    .pull-right{
+        float: right;
+    }
+    /* 块级元素居中 */
+    .block-center{
+        margin:0 auto;
+    }
+    /* 文字居中 */
+    .text-center{
+        text-align: center;
+    }
+
+    .w{
+        width: 1240px;
+    }
+
+    .menulist{
+        width: 236px;
+        height:588px;
+        background-color: grey;
+    }
+    .menulist ul li{
+        list-style: none;
+        height:30px;
+        line-height: 30px;
+        font-size: 14px;
+        position: relative;
+        /* background-color: blue; */
+        text-indent: 2em;
+    }
+    .menulist li .list{
+        position: absolute;
+        width: 1006px;
+        height:588px;
+        background-color: red;
+        display: none;
+        left:236px;
+        top:0;
+    }
+    .menulist li:hover .list{
+        display: block;
+    }
+    .menulist li:nth-of-type(2) .list{
+        top:-30px;
+        background-color: blue;
+    }
